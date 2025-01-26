@@ -1,16 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['re-new-orcin.vercel.app'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 're-new-orcin.vercel.app',
-        pathname: '/**',
-      },
-    ],
+    unoptimized: true
   },
-  output: 'standalone',
+  output: 'standalone'
 }
 
 module.exports = nextConfig
