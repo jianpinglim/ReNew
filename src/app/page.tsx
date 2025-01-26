@@ -31,7 +31,7 @@ export default function ProfilePage() {
             <div className="relative">
               <div className="relative h-48 bg-orange-200 rounded-lg flex items-center justify-center">
               <Image
-                src="/images/SIPPFP.png"
+                src="/images/sippfp.png"
                 alt="Profile Picture"
                 width={227}
                 height={227}
