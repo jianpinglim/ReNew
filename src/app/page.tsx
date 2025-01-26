@@ -36,9 +36,9 @@ export default function ProfilePage() {
                 width={227}
                 height={227}
                 priority
-                unoptimized
                 className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-[50%]"
               />
+
               </div>
 
               {/* Profile Info */}
