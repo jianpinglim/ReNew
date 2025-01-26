@@ -30,14 +30,15 @@ export default function ProfilePage() {
           <div className="lg:col-span-2 space-y-6">
             <div className="relative">
               <div className="relative h-48 bg-orange-200 rounded-lg flex items-center justify-center">
-                <Image
-                  src="/images/sippfp.png"
-                  alt="Profile Picture"
-                  width={227}
-                  height={227}
-                  priority
-                  className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-[50%]"
-                />
+              <Image
+                src={`/images/sippfp.png`}
+                alt="Profile Picture"
+                width={227}
+                height={227}
+                priority
+                unoptimized
+                className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-[50%]"
+              />
               </div>
 
               {/* Profile Info */}
