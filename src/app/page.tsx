@@ -37,6 +37,7 @@ export default function ProfilePage() {
                   alt="Profile Picture"
                   width={227}
                   height={227}
+                  priority
                   className="absolute top-[30%] left-1/2 transform -translate-x-1/2 -translate-y-[50%]"
                 />
               </div>
