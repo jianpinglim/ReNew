@@ -28,12 +28,10 @@ export default function ProfilePage() {
       <main className="flex-1 ml-48 p-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 space-y-6">
-            {/* Profile Header */}
-            {/* Profile Header */}
             <div className="relative">
               <div className="relative h-48 bg-orange-200 rounded-lg flex items-center justify-center">
                 <Image
-                  src="/sippfp.png"
+                  src="/images/sippfp.png"
                   alt="Profile Picture"
                   width={227}
                   height={227}
