@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Diamond, Star } from "lucide-react"
 import Image from "next/image"
+import Link from 'next/link';
 
 export default function ProfilePage() {
   return (
@@ -11,15 +12,15 @@ export default function ProfilePage() {
         <div className="space-y-6">
           <h1 className="text-2xl font-bold text-orange-400">ReNew</h1>
           <nav className="space-y-4">
-            <a href="#" className="block text-gray-600 hover:text-gray-900">
-              Jobs
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-gray-900">
-              Learn Skills
-            </a>
-            <a href="#" className="block rounded-lg bg-blue-100 px-4 py-2 text-blue-500">
-              Profile
-            </a>
+            <Link href="/jobs" passHref legacyBehavior>
+              <a className="block text-gray-600 hover:text-gray-900">Jobs</a>
+            </Link>
+            <Link href="/learn-skills" passHref legacyBehavior>
+              <a className="block text-gray-600 hover:text-gray-900">Learn Skills</a>
+            </Link>
+            <Link href="/profile" passHref legacyBehavior>
+              <a className="block rounded-lg bg-blue-100 px-4 py-2 text-blue-500">Profile</a>
+            </Link>
           </nav>
         </div>
       </aside>
@@ -31,7 +32,7 @@ export default function ProfilePage() {
             <div className="relative">
               <div className="relative h-48 bg-orange-200 rounded-lg flex items-center justify-center">
               <Image
-                src="/images/sippfp.png"
+                src="/pfp.jpg"
                 alt="Profile Picture"
                 width={227}
                 height={227}
