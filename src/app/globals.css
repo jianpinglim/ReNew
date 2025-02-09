@@ -34,6 +34,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+  
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -62,6 +63,20 @@ body {
   }
 }
 
+@layer components {
+  /* Define custom utilities for our custom colors */
+  .bg-background {
+    background-color: theme('colors.background');
+  }
+  .text-foreground {
+    color: theme('colors.foreground');
+  }
+  .border-border {
+    border-color: theme('colors.border');
+  }
+}
+
+/* Now you can safely use @apply with the utilities above */
 @layer base {
   * {
     @apply border-border;
